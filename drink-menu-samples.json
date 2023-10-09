@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Bubble Milk Tea",
+        "type": "Tea",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/bubble-milktea.png"
+    },
+    {
+        "name": "Iced Latte",
+        "type": "Coffee",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "Matcha Green Tea Latte",
+        "type": "Tea",
+        "price": "$25 (S), $30 (M), $35 (L)",
+        "image": "assets/matcha-green-tea-latte.jpg"
+    },
+    {
+        "name": "Mango Smoothie",
+        "type": "Smoothie",
+        "price": "$35 (S), $40 (M), $45 (L)",
+        "image": "assets/mango-smoothie.jpg"
+    },
+    {
+        "name": "Caramel Macchiato",
+        "type": "Coffee",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/caramel-macchiato.jpg"
+    },
+    {
+        "name": "Raspberry Lemonade",
+        "type": "Juice",
+        "price": "$20 (S), $25 (M), $30 (L)",
+        "image": "assets/raspberry-lemonade.jpg"
+    },
+    {
+        "name": "Strawberry Banana Smoothie",
+        "type": "Smoothie",
+        "price": "$35 (S), $40 (M), $45 (L)",
+        "image": "assets/strawberry-banana-smoothie.jpg"
+    },
+    {
+        "name": "Iced Chai Latte",
+        "type": "Tea",
+        "price": "$25 (S), $30 (M), $35 (L)",
+        "image": "assets/iced-chai-latte.jpg"
+    }
+]
