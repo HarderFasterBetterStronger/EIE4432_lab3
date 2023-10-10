@@ -95,14 +95,15 @@ function placeOrder(event){
         let sweetness = document.forms["form"]["Sweetness"].value
         let orderData = [name,drink,size,ice,sweetness]
         localStorage.setItem("orders",orderData)
-        alert("Order placed successfully! Thank you for your order.")
+        //new alert by using div
+        $("#orderalert").removeClass("d-none");
+        $("#orderalert").fadeOut(3000);
+        
+        //alert("Order placed successfully! Thank you for your order.")
         document.getElementById("form").reset() 
         var output = document.getElementById("price")
         output.innerHTML = 0
         
-        
-
-
 
     }
     
@@ -112,3 +113,112 @@ function reset1(){
     var output = document.getElementById("price")
     output.innerHTML = 0
 }
+
+
+//JQuery
+ 
+$(document).ready(function(){
+
+    $("#name").on("click",function(){
+        if ($("#name").val()===""){
+            $("#name").addClass("error");
+            $("#name").removeClass("error-free");
+        }
+        else{
+            $("#name").addClass("error-free");
+            $("#name").removeClass("error");
+        }
+    })
+    $("#name").on("change",function(){
+        if ($("#name").val()===""){
+            $("#name").addClass("error");
+            $("#name").removeClass("error-free");
+        }
+        else{
+            $("#name").addClass("error-free");
+            $("#name").removeClass("error");
+        }
+    })
+
+    
+    $("#drink").on("click",function(){
+        if ($("#drink").val()==="none"){
+            $("#drink").addClass("error");
+            $("#drink").removeClass("error-free");
+        }
+        else{
+            $("#drink").addClass("error-free");
+            $("#drink").removeClass("error");
+        }
+    })
+    $("#drink").on("change",function(){
+        if ($("#drink").val()==="none"){
+            $("#drink").addClass("error");
+            $("#drink").removeClass("error-free");
+        }
+        else{
+            $("#drink").addClass("error-free");
+            $("#drink").removeClass("error");
+        }
+    })
+
+})
+
+//drink preview
+$(document).ready(function(){
+    $("#drink").on("click",function(){
+        if ($("#drink").val()==="none"){
+            $("#drinkpreviewdiv").addClass("d-none");
+        }
+        if ($("#drink").val()==="Bubble Milktea"){
+            $("#drinkpreview").attr("src","assets/bubble-milktea.png");
+            $("#drinkpreview").attr("alt","bubble milktea");
+            $("#drinkpreviewdiv").removeClass("d-none");
+        }
+        else if ($("#drink").val()==="Iced Latte"){
+            $("#drinkpreview").attr("src","assets/iced-latte.jpg");
+            $("#drinkpreview").attr("alt","iced-latte");
+            $("#drinkpreviewdiv").removeClass("d-none");
+        }
+        else if ($("#drink").val()==="Pineapple Juice"){
+            $("#drinkpreview").attr("src","assets/caramel-macchiato.jpg");
+            $("#drinkpreview").attr("alt","caramel-macchiato");
+            $("#drinkpreviewdiv").removeClass("d-none");
+        }
+        else{
+            $("#drinkpreviewdiv").addClass("d-none");
+        }
+        
+    })
+    $("#drink").on("change",function(){
+        if ($("#drink").val()==="Bubble Milktea"){
+            $("#drinkpreview").attr("src","assets/bubble-milktea.png");
+            $("#drinkpreview").attr("alt","bubble milktea");
+            $("#drinkpreviewdiv").removeClass("d-none");
+        }
+        else if ($("#drink").val()==="Iced Latte"){
+            $("#drinkpreview").attr("src","assets/iced-latte.jpg");
+            $("#drinkpreview").attr("alt","iced-latte");
+            $("#drinkpreviewdiv").removeClass("d-none");
+        }
+        else if ($("#drink").val()==="Pineapple Juice"){
+            $("#drinkpreview").attr("src","assets/caramel-macchiato.jpg");
+            $("#drinkpreview").attr("alt","caramel-macchiato");
+            $("#drinkpreviewdiv").removeClass("d-none");
+        }
+        else{
+            $("#drinkpreviewdiv").addClass("d-none");
+        }
+        
+    })
+})
+    
+
+//When window scroll to bottom hide footer
+$(document).ready(function(){
+    $(window).scroll(function() {
+        if ($('body').height() <= ($(window).height() + $(window).scrollTop())) {
+            $('#footer').hide();
+        }
+     });
+ });
