@@ -19,7 +19,18 @@
         text-anchor: middle;
         alignment-baseline: central;
     }
+    .booked{
+      fill:red;
+      stroke: black;
+      stroke-width: 2px;
+      cursor: not-allowed;
+    }
 </style>
+
+<!--Jquery&Js-->
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/reserve-table.js"></script>
+
 </head>
 
 <body>
@@ -50,6 +61,7 @@
                 <li class="nav-item"><a class="nav-link mx-5" aria-current="page" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link mx-5" href="order.html">Order</a></li>
                 <li class="nav-item"><a class="nav-link mx-5 active link-primary fw-bold " href="reserve.html">Reserve a Table</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link mx-5">Menu</a></li>
             </ul>
           </div>
         </div>
@@ -59,39 +71,37 @@
     <div class="container mt-2 ">
       <div class="row  ">
         <svg width="400" height="100" >
-            <circle class="table" cx="20%" cy="50%" r="40" onclick="selectTable(1)"/>
-            <text x="20%" y="50%" class="number" onclick="selectTable(1)">1</text>
-            <circle class="table" cx="40%" cy="50" r="40" onclick="selectTable(2)"/>
-            <text x="40%" y="50%"  class="number" onclick="selectTable(2)">2</text>
-            <circle class="table" cx="60%" cy="50%" r="40" onclick="selectTable(3)"/>
-            <text x="60%" y="50%"  class="number" onclick="selectTable(3)">3</text>
-            <circle class="table" cx="80%" cy="50%" r="40" onclick="selectTable(4)"/>
-            <text x="80%" y="50%"  class="number" onclick="selectTable(4)">4</text>
+            <circle class="table" cx="20%" cy="50%" r="40" id="circle1" />
+            <text x="20%" y="50%" class="number" id="text1">1</text>
+            <circle class="table" cx="40%" cy="50" r="40" id="circle2"/>
+            <text x="40%" y="50%"  class="number" id="text2">2</text>
+            <circle class="table" cx="60%" cy="50%" r="40" id="circle3"/>
+            <text x="60%" y="50%"  class="number" id="text3">3</text>
+            <circle class="table" cx="80%" cy="50%" r="40" id="circle4"/>
+            <text x="80%" y="50%"  class="number" id="text4">4</text>
         </svg>
       </div>
     </div>
 
     <div id="selected-table " class="text-center my-3">
-        <h4 class="fw-bold">
-            You are selecting: Table <span id="output"></span>
+        <h4 class="fw-bold" id="output" >
+            Click a Table to book
         </h4>
-            
-            
+    </div>
+
+    <!--Button-->
+    <div class="row justify-content-center">
+      <button class="btn btn-primary col-2 mx-2 d-none" id="confirm" type="submit">Confirm</button>
+      <button class="btn btn-secondary col-2 mx-2 d-none" id="dismiss" type="submit">Dismiss</button>
     </div>
 
 
   <footer class="pt-3 bg-dark text-center text-white fixed-bottom">        
-    <p>© 21096764D_Liu_Jiahao - EIE4432 Lab 2 Project</p>
+    <p>© 21096764D_Liu_Jiahao - EIE4432 Lab 3 Project</p>
   </footer>
 
 
-  <script>
-    function selectTable(tableNumber){
-        
-        var output = document.getElementById("output")
-        output.innerHTML=tableNumber
-    }
-</script>
+
 
 
 </body>

@@ -96,9 +96,10 @@ function placeOrder(event){
         let orderData = [name,drink,size,ice,sweetness]
         localStorage.setItem("orders",orderData)
         //new alert by using div
-        $("#orderalert").removeClass("d-none");
-        $("#orderalert").fadeOut(3000);
-        
+        $("#orderalert").html("<div >Order placed successfully! Thank you for your order.</div>")
+        $("#orderalert > div").addClass("alert alert-success").attr("role","alert")
+        $("#orderalert").removeClass("d-none").fadeIn(500).delay(3000).fadeOut(500)
+        $("#inside").remove()
         //alert("Order placed successfully! Thank you for your order.")
         document.getElementById("form").reset() 
         var output = document.getElementById("price")

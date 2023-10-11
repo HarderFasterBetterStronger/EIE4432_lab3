@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Bubble Milk Tea",
+        "type": "Classic Drinks",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/bubble-milktea.png"
+    },
+    {
+        "name": "Iced Latte",
+        "type": "Coffee",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "C",
+        "type": "tea",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    },
+    {
+        "name": "B",
+        "type": "Coco",
+        "price": "$30 (S), $35 (M), $40 (L)",
+        "image": "assets/iced-latte.jpg"
+    }
+    
+]
